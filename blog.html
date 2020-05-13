@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        .left-nav .search {
+
+            padding: left;
+            color: #909498
+        }
+
+        .left-nav {
+            padding-top: 7px;
+            padding-left: 60px;
+            color: #848484;
+        }
+
+        nav {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            border-bottom: 1px solid #c5bebe;
+        }
+
+        .search {
+            display: inline-flex;
+            padding-left: 150px;
+            margin-top: 15px;
+            border-radius: 10%;
+        }
+
+        .right-nav {
+            position: absolute;
+            float: right;
+            top: 9px;
+            ;
+            right: 13%;
+
+
+
+        }
+
+        .right-nav ul {}
+
+        .right-nav ul li {
+            margin-right: 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .navbar-text {
+            position: absolute;
+            right: 10%;
+        }
+
+        .navbar-text ul li {
+            font-size: 20px;
+            font-weight: 700;
+            padding-right: 30px;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #fff
+        }
+
+        .navbar-text ul li a:hover {
+            color: #e32879 !important;
+            transition: .3s ease;
+        }
+
+        .navbar-brand {
+
+            color: #fff !important;
+            font-size: 33px;
+            font-weight: 800;
+        }
+
+        .navbar-brand span {
+            color: #e32879
+        }
+
+        .nav-item active {
+            color: #e32879
+        }
+
+        .navbar-light .navbar-nav .active>.nav-link {
+            color: #e32879
+        }
+
+        .dot-right {
+            float: right;
+        }
+
+        .dot-right h3 {
+            float: right;
+        }
+
+        .dot-left a {
+            display: inline-block;
+            color: #b3b3b3;
+            margin-right: 24px;
+            position: relative;
+        }
+
+        .dot-left a:after {
+            position: absolute;
+            right: -15px;
+            top: 16px;
+            width: 6px;
+            height: 6px;
+            background: #5c5c5c;
+            content: "";
+            border-radius: 50%;
+        }
+
+        .about-dot {
+            background: #2a2a2a;
+            padding: 50px 0;
+        }
+
+        .dot-left {
+            color: #5c5c5c;
+        }
+
+        .dot-left a {
+            font-size: 21px;
+            color: #b3b3b3;
+        }
+
+        @media only screen and (max-width: 991px) {
+            .tex-tex {}
+        }
+
+        @media only screen and (max-width: 991px) {
+            .navbar-text {
+                width: -webkit-fill-available;
+                right: 0 !important;
+                background: #191919;
+                padding-top: 20px;
+                position: relative !important;
+            }
+        }
+
+        .jef {
+            display: -webkit-inline-box
+        }
+
+        .jef h4 {
+            padding-left: 12px
+        }
+
+        .jeff span {
+            
+            color: #fff
+        }
+
+        .from {
+            text-align: center;
+            padding-top: 90px;
+            padding-bottom: 20px
+        }
+
+        .from h2 {
+            color: #e32879;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px
+        }
+
+        .from h1 {
+            font-size: 45px;
+            color: #ffffff;
+            font-weight: 700;
+            margin-top: 14px;
+        }
+
+        .detail li {
+            list-style: none;
+            padding-top: 10px;
+            color: #6f6f6d;
+        }
+
+        .useful li {
+            list-style: none;
+            padding-top: 10px;
+            color: #6f6f6d;
+        }
+
+        .insta-pic {
+            display: block;
+        }
+
+        .insta-pic img {
+            margin-right: 5px;
+            width: calc(33.33% - 5px);
+            float: left;
+            margin-bottom: 5px
+        }
+
+        .copyright-text {
+            text-align: center;
+        }
+
+        .copyright-text p {
+            font-size: 16px;
+            font-family: "Libre Franklin", sans-serif;
+            color: #b3b3b3;
+            font-weight: 400;
+            line-height: 26px;
+            margin: 0 0 15px 0;
+        }
+
+        .social {
+            padding-top: 15px
+        }
+
+        footer {
+            background: #191919;
+            padding-top: 80px;
+            padding-bottom: 50px;
+        }
+
+        footer h1 {
+            color: white;
+        }
+
+        .social a {
+
+            display: inline-block;
+            font-size: 16px;
+            color: #ffffff;
+            width: 41px;
+            height: 41px;
+            background: #303030;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 41px;
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            margin-right: 3px;
+        }
+
+        .social a i {
+            color: white;
+            text-align: center;
+        }
+
+        .social a:hover {
+            background: #e32879;
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+
+        }
+
+        .no-gutters {
+            padding: 60px 20px 50px 40px;
+            background: #222;
+        }
+
+        .no-gutters img {
+            border-radius: 50%;
+        }
+
+        .card.mb-3 {
+            border: none;
+        }
+
+        .card-body {
+            color: white;
+        }
+
+        span.design {
+            color: #e32879;
+            padding-bottom: 10px
+        }
+
+        p.card-text {
+            color: #afafaf;
+        }
+
+        .create {
+            text-align: center;
+            padding-top: 75px;
+            padding-bottom: 70px;
+            color: white;
+        }
+
+        .create h1 {
+            padding-bottom: 17px;
+        }
+
+        .create p {
+            padding-bottom: 17px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid" style="background:#191919">
+        <nav class="navbar navbar-expand-lg navbar-light " style="background:#191919;">
+            <a class="navbar-brand" href="#" style="padding-left:105px;">
+                <div>Hazze <span>.</span></div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+
+                <span class="navbar-text">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </nav>
+    </div>
+
+    <section class="about-dot">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 dot-left">
+                    <a style="color: #b3b3b3;">Home</a>
+                    <span style=" #5c5c5c;">Blog</span>
+                </div>
+
+                <div class="col-sm-6 dot-right">
+
+                    <h3 style="    color: #fff;
+    font-weight: 700;"> Blog</h3>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section style="background: #222 ">
+
+        <div class="container">
+
+            <div class="from">
+                <h2>LATEST BLOG</h2>
+                <h1>From Our Blog</h1>
+            </div>
+            <div class="blog">
+
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters" style="height: 500px;">
+                                <div class="col-md-6" style="background-image: url(./img/blog-1.jpg);background-position: center;background-size: cover">
+
+                                </div>
+                                <div class="col-md-6" style="background-color: #191919">
+                                    <div class="card-body">
+                                        <span style="color:#e32879 "><i class="far fa-calendar-alt"></i> August 9,2019 <i class="fas fa-comments"></i> 0</span>
+                                        <h1 style="font-size: 25px;padding-top: 15px;padding-bottom: 10px">Every Single Way You Can Wear Pasthel Makeup This Spring.</h1>
+                                        <p style="color: #b3b3b3;padding-bottom: 20px">Never ever think of giving up. Winners never quit and</p>
+                                        <div class="jef ">
+                                            <img src="./img/author-1.jpg">
+                                            <div class="jeff">
+                                                <h4>Jeff Rodriguez</h4>
+                                                <span>Designer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters" style="height: 500px;">
+                                <div class="col-md-6" style="background-image: url(./img/blog-2.jpg);background-position: center;background-size: cover">
+
+                                </div>
+                                <div class="col-md-6" style="background-color: #191919">
+                                    <div class="card-body">
+                                        <span style="color:#e32879 "><i class="far fa-calendar-alt"></i> August 9,2019 <i class="fas fa-comments"></i> 0</span>
+                                        <h1 style="font-size: 25px;padding-top: 15px;padding-bottom: 10px">Every Single Way You Can Wear Pasthel Makeup This Spring.</h1>
+                                        <p style="color: #b3b3b3;padding-bottom: 20px">Never ever think of giving up. Winners never quit and</p>
+                                        <div class="jef ">
+                                            <img src="./img/author-1.jpg">
+                                            <div class="jeff">
+                                                <h4>Jeff Rodriguez</h4>
+                                                <span>Designer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters" style="height: 500px;">
+                                <div class="col-md-6" style="background-image: url(./img/blog-44.jpg);background-position: center;background-size: cover">
+
+                                </div>
+                                <div class="col-md-6" style="background-color: #191919">
+                                    <div class="card-body">
+                                        <span style="color:#e32879 "><i class="far fa-calendar-alt"></i> August 9,2019 <i class="fas fa-comments"></i> 0</span>
+                                        <h1 style="font-size: 25px;padding-top: 15px;padding-bottom: 10px">Every Single Way You Can Wear Pasthel Makeup This Spring.</h1>
+                                        <p style="color: #b3b3b3;padding-bottom: 20px">Never ever think of giving up. Winners never quit and</p>
+                                        <div class="jef ">
+                                            <img src="./img/author-1.jpg">
+                                            <div class="jeff">
+                                                <h4>Jeff Rodriguez</h4>
+                                                <span>Designer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row no-gutters" style="height: 500px;">
+                                <div class="col-md-6" style="background-image: url(./img/blog-55.jpg);background-position: center;background-size: cover">
+
+                                </div>
+                                <div class="col-md-6" style="background-color: #191919">
+                                    <div class="card-body">
+                                        <span style="color:#e32879 "><i class="far fa-calendar-alt"></i> August 9,2019 <i class="fas fa-comments"></i> 0</span>
+                                        <h1 style="font-size: 25px;padding-top: 15px;padding-bottom: 10px">Every Single Way You Can Wear Pasthel Makeup This Spring.</h1>
+                                        <p style="color: #b3b3b3;padding-bottom: 20px">Never ever think of giving up. Winners never quit and</p>
+                                        <div class="jef ">
+                                            <img src="./img/author-1.jpg">
+                                            <div class="jeff">
+                                                <h4>Jeff Rodriguez</h4>
+                                                <span>Designer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row no-gutters" style="height: 500px;">
+                                          <div class="card-body" style="    background: #e32879; text-align: center;">
+                                                <span style="color:#fff "><i class="far fa-calendar-alt"></i>  August 9,2019  <i class="fas fa-comments"></i> 0</span>
+                                                <h1 style="font-size: 25px;padding-top: 15px;padding-bottom: 10px">Every Single Way You Can Wear Pasthel Makeup This Spring.</h1>
+                                                <p style="color: #b3b3b3;padding-bottom: 20px;color: #fff;
+    margin-bottom: 20px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et sed do eiusmod tempor incididunt ut labore</p>
+                                                <div class="jef ">
+                                                <img src="./img/author-1.jpg">
+                                                    <div class="jeff">
+                                                    <h4>Jeff Rodriguez</h4>
+                                                    <span style="color: #fff">Designer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="col-lg-6" >
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row no-gutters" style="height: 500px;">
+                                        <div class="col-md-6" style="background-image: url(./img/blog-33.jpg);background-position: center;background-size: cover">
+                                            
+                                        </div>
+                                        <div class="col-md-6" style="background-color: #191919">
+                                            <div class="card-body">
+                                                <span style="color:#e32879 "><i class="far fa-calendar-alt"></i>  August 9,2019  <i class="fas fa-comments"></i> 0</span>
+                                                <h1 style="font-size: 25px;padding-top: 15px;padding-bottom: 10px">Every Single Way You Can Wear Pasthel Makeup This Spring.</h1>
+                                                <p style="color: #b3b3b3;padding-bottom: 20px">Never ever think of giving up. Winners never quit and</p>
+                                                <div class="jef ">
+                                                <img src="./img/author-1.jpg">
+                                                    <div class="jeff">
+                                                    <h4>Jeff Rodriguez</h4>
+                                                    <span>Designer</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        </div>
+            </div>
+        </div>
+
+    </section>
+    
+    
+    
+    <footer>
+    
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-3 hazze"><h1>Hazze<span style="color: #e32879;">.</span></h1>
+            <ul class="detail"><li>address:60-49 Road11378 New York</li>
+            
+                <li>Phone: +65 11.188.888
+</li>
+                <li>Email: hello.colorlib@gmail.com
+</li>
+                <div class="social">
+                <a><i class="fa fa-instagram"></i></a> 
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                </div>
+            </ul>
+            
+            </div>
+            <div class="col-sm-3"><h1>Useful Links</h1>
+            <ul class="useful"><li>About Us</li><li>Model</li><li>Contact</li><li>Services</li></ul>
+            </div>
+            <div class="col-sm-3"><h1>Join The Newsletter</h1><p></p> <input type=text placeholder="  Enter Your E-mail" style="    height: 40px;
+    width: 205px;
+    border: 1px solid #5f5c5c;
+    background: none;"> <button style="border: none;
+    width: 205px;
+    background-color: #e32879;
+    height: 40px;
+    margin-top: 15px;
+    color: white">Subscribe</button></div>
+            <div class="col-sm-3"><h1>Instagram</h1> <div class="insta-pic">
+<img src="./img/instagram-1.jpg" alt="">
+<img src="./img/instagram-2.jpg" alt="">
+<img src="./img/instagram-3.jpg" alt="">
+<img src="./img/instagram-4.jpg" alt="">
+<img src="./img/instagram-5.jpg" alt="">
+<img src="./img/instagram-6.jpg" alt="">
+</div>
+            </div>
+        
+        </div>
+        
+        </div>
+    <hr>
+   <div class="copyright-text"><p>
+Copyright ©<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">document.write(new Date().getFullYear());</script>2020 All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Joo</a>
+</p></div>
+    
+    </footer>
+
+
+
+</body>
+
+</html>
